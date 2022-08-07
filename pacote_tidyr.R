@@ -13,3 +13,18 @@
 # - Cada observação é disposta em linha;
 # - Acessa variáveis como vetores;
 # - Preserva observações em operações vetorizadas.
+
+### Tibbles: representam data frames organizados e simplificados. Os tibbles
+### são tabelas formatadas pelo pacote 'tibble'. Eles herdam o data frame class,
+### mas tem características melhoradas:
+
+### Veja o exemplo e diferenças da tabela padrão:
+
+library(tibble)
+data(iris)
+tibble(iris) # Dados com tibble
+data.frame(iris) # Dados com tabela padrão
+
+### Construindo um tibble:
+
+
