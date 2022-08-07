@@ -10,3 +10,6 @@
 2. Exemplos de tibbles (tabelas organizadas e simplificadas):
 - Veja as diferenças da tabela padrão e tibble;
 - Construindo um tibble.
+3. Reformulando (reshape) dados:
+- Função pivot_longer;
+- Função pivot_wider.
