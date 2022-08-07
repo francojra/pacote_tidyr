@@ -50,7 +50,7 @@ deframe(enframe(3:1))
 deframe(tibble(a = 1:3))
 deframe(tibble(a = as.list(1:3)))
 
-# Testa de 'x' é um tibble
+# Testa se 'x' é um tibble
 is_tibble(iris)
 
 # Reformulando (reshape) dados -------------------------------------------------------------------------------------------------------------
