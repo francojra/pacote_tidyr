@@ -110,3 +110,14 @@ dados <- tibble(year = c(99, 10, 99, 10),
 dados
 
 separate(dados, rate, sep = "/", into = c("cases", "pop"))
+
+## Função separate_rows:
+
+### Separa células de uma coluna e distribui a divisão em várias linhas.
+
+dados <- tibble(year = c(99, 10, 99, 10), 
+                country = c("a", "a", "b", "b"),
+                rate = c("0.7K/19M", "2K/20M", "37K/172M", "80K/174M"))
+dados
+
+separate_rows(dados, rate, sep = "/")
