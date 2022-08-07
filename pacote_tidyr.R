@@ -99,3 +99,14 @@ dados <- tibble(year = c(99, 10, 99, 10),
 dados
 
 unite(dados, century, year, col = "year", sep = "")
+
+## Função separate:
+
+### Separa células de uma coluna em duas células e duas colunas.
+
+dados <- tibble(year = c(99, 10, 99, 10), 
+                country = c("a", "a", "b", "b"),
+                rate = c("0.7K/19M", "2K/20M", "37K/172M", "80K/174M"))
+dados
+
+separate(dados, rate, sep = "/", into = c("cases", "pop"))
