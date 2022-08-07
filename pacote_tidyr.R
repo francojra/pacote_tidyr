@@ -83,3 +83,19 @@ dados
 pw <- pivot_wider(dados, names_from = type, 
             values_from = count)
 view(pw)
+
+# Células divididas (split cells) ----------------------------------------------------------------------------------------------------------
+
+### Use-se essas funções para dividir ou combinar células em
+### individuais, isolados valores.
+
+## Função unite: 
+
+### Colapsa valores das células de duas colunas em uma única coluna.
+
+dados <- tibble(year = c(99, 10, 99, 10), 
+                country = c("a", "a", "b", "b"),
+                century = c(19, 20, 19, 20))
+dados
+
+unite(dados, century, year, col = "year", sep = "")
