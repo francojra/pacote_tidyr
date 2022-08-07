@@ -18,7 +18,9 @@
 ### são tabelas formatadas pelo pacote 'tibble'. Eles herdam o data frame class,
 ### mas tem características melhoradas:
 
-### Veja o exemplo e diferenças da tabela padrão:
+# Exemplos de tibbles (tabelas organizadas e simplificadas) --------------------------------------------------------------------------------
+
+### Veja as diferenças da tabela padrão e tibble:
 
 library(tibble)
 data(iris)
