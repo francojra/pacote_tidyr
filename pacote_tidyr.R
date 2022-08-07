@@ -52,3 +52,34 @@ deframe(tibble(a = as.list(1:3)))
 
 # Testa de 'x' é um tibble
 is_tibble(iris)
+
+# Reformulando (reshape) dados -------------------------------------------------------------------------------------------------------------
+
+## Função pivot_longer:
+
+### Pivot data reorganiza valores dentro de um novo layout.
+### Ele colapsa várias colunas em duas, nomes das colunas se
+### movem para um nova coluna 'nome' criada, e valores para uma nova
+### coluna com os valores. Veja o exemplo:
+
+library(tidyr)
+iris[1:5,]
+pl <- pivot_longer(iris, cols = 3:4, names_to = "valores_petala",
+             values_to = "Valores")
+view(pl)
+
+## Função pivot_wider:
+
+### Executa o inverso de pivot_longer. Expande duas colunas em
+### várias. Uma coluna promove nomes em várias colunas, e outra
+### os valores.
+
+dados <- tibble(year = c(1999, 1999, 2000, 2000), 
+                country = c("a", "a", "b", "b"),
+                type = c("cases", "pop", "cases", "pop"),
+                count = c(3, 5, 9, 2))
+dados
+
+pw <- pivot_wider(dados, names_from = type, 
+            values_from = count)
+view(pw)
