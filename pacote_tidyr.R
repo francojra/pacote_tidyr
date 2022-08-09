@@ -127,4 +127,11 @@ separate_rows(dados, rate, sep = "/")
 ### Cria novas combinações de variáveis ou identifica valores perdidos
 ### implícitos (combinações de variáveis não apresentadas nos dados).
 
+## Função expand:
 
+### Cria uma nova tibble com todas as possíveis combinações dos valores
+### das variáveis listadas. Também corta outras variáveis...
+
+mtcars
+
+expand(mtcars, cyl, gear, carb)
