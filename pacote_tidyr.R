@@ -84,7 +84,7 @@ pw <- pivot_wider(dados, names_from = type,
             values_from = count)
 view(pw)
 
-# Células divididas (split cells) ----------------------------------------------------------------------------------------------------------
+# Células divididas (Split Cells) ----------------------------------------------------------------------------------------------------------
 
 ### Use-se essas funções para dividir ou combinar células em
 ### individuais, isolados valores.
@@ -121,3 +121,10 @@ dados <- tibble(year = c(99, 10, 99, 10),
 dados
 
 separate_rows(dados, rate, sep = "/")
+
+# Expandir tabelas (Expand Tables) ---------------------------------------------------------------------------------------------------------
+
+### Cria novas combinações de variáveis ou identifica valores perdidos
+### implícitos (combinações de variáveis não apresentadas nos dados).
+
+
