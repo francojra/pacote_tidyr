@@ -17,3 +17,10 @@
 - Função unite;
 - Função separate;
 - Função separate_rows.
+5. Expandir tabelas (Expand Tables):
+- Função expand;
+- Função complete.
+6. Manipulação com valores faltantes:
+- Função drop_na;
+- Função fill;
+- Função replace_na.
