@@ -159,3 +159,9 @@ starwars1 <- starwars %>%
 starwars1
 
 drop_na(starwars1, hair_color)  
+
+## Função fill:
+
+### Preenche os NAs das colunas usando os valores próximos ou prévios.
+
+fill(starwars1, hair_color)
