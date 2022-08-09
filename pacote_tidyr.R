@@ -142,3 +142,20 @@ expand(mtcars, cyl, gear, carb)
 ### listadas. Preenche as variáveis restantes com NA.
 
 complete(mtcars, cyl, gear, carb)
+
+# Manipulação com valores faltantes --------------------------------------------------------------------------------------------------------
+
+### Corta ou realoca explícitos valores faltantes (NAs).
+
+library(tidyverse)
+view(starwars)
+
+## Função drop_na:
+
+### Corta linhas contendo valores com NA.
+
+starwars1 <- starwars %>%
+  select(name, hair_color)
+starwars1
+
+drop_na(starwars1, hair_color)  
