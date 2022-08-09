@@ -165,3 +165,9 @@ drop_na(starwars1, hair_color)
 ### Preenche os NAs das colunas usando os valores próximos ou prévios.
 
 fill(starwars1, hair_color)
+
+## Função replace_na:
+
+### Especifica um valor para ser substituído pelo NA na coluna selecionada.
+
+replace_na(starwars1, list(hair_color = "Indefinido"))
