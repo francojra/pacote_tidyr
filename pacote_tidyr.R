@@ -135,3 +135,10 @@ separate_rows(dados, rate, sep = "/")
 mtcars
 
 expand(mtcars, cyl, gear, carb)
+
+## Função complete:
+
+### Adiciona valores faltantes das combinações de valores das variáveis
+### listadas. Preenche as variáveis restantes com NA.
+
+complete(mtcars, cyl, gear, carb)
